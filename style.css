@@ -1,0 +1,90 @@
+body {
+  background: hsl(0, 0%, 8%);
+  font-family: "Inter";
+}
+
+p,
+a {
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  max-width: 400px;
+  width: 100%;
+  background: hsl(0, 0%, 12%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.name {
+  color: white;
+}
+
+.adress {
+  color: hsl(75, 94%, 57%);
+  font-weight: bold;
+}
+
+/* container matches the card width, centered, responsive */
+.social-links-container {
+  width: 100%;
+  max-width: 320px; /* tweak this to match your card width */
+  margin: 1.5rem auto 0; /* center horizontally */
+}
+
+/* remove default list styling */
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* button-like links */
+.social-link {
+  display: block;
+  width: 100%; /* full width inside the card */
+  padding: 0.75rem 1rem;
+  text-align: center;
+
+  background-color: #333;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  border-radius: 0.5rem;
+  text-decoration: none;
+
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* interaction states */
+.social-link:hover,
+.social-link:focus-visible {
+  background-color: #444;
+  transform: translateY(-1px);
+}
+
+.social-link:focus-visible {
+  outline: 2px solid #a3ff12;
+  outline-offset: 2px;
+}
